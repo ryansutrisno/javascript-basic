@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13 Array to String</title>
+</head>
+<body>
+    <p>Mengubah array-object menjadi string</p>
+    <button onclick="arrayString()">Klik ubah</button>
+    <p id="demo"></p>
+    <script>
+        
+        function arrayString() {
+            const fruits = [
+                {name: 'Pepaya', price: 3000},
+                {name: 'Jagung', price: 2000},
+                {name: 'Mengkudu', price: 4000},
+                {name: 'Kiwi', price: 6000}
+            ]
+            let obj = JSON.stringify(fruits);
+            document.getElementById("demo").innerHTML = obj;
+        }
+    </script>
+</body>
+</html>
