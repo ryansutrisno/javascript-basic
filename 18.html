@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18 Duplicates Remover</title>
+</head>
+<body>
+    <p>Duplicates Remover</p>
+    <p>Jakarta, Aceh, Malang, Medan, Bontang, Jogja, Jakarta, Bandung, Malang, Solo, Palembang, Bandung</p>
+    <hr>
+    <p>hasil</p>
+    <p id="demo"></p>
+    <script>
+        let kota = ['Jakarta', 'Aceh', 'Malang', 'Medan', 'Bontang', 'Jogja', 'Jakarta', 'Bandung', 'Malang', 'Solo', 'Palembang', 'Bandung'];
+
+        let kotaUnik = kota.filter(function(item, index) {
+            return kota.indexOf(item) >= index;
+        });
+        document.getElementById("demo").innerHTML = kotaUnik;
+    </script>
+</body>
+</html>
