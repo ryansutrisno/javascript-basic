@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06 Loop with Range</title>
+</head>
+<body>
+    <button onclick="loopRange()">Loop with Range</button>
+    <p id="demo"></p>
+    <script>
+        function loopRange() {
+            let start = prompt("Masukkan angka pertama");
+            let end = prompt("Masukkan angka kedua");
+
+            let result = [];
+            for (let i = start; i <= end; i++) {
+                result.push(i);
+            }
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
