@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03</title>
+</head>
+<body>
+    <button onclick="ganjilGenap()">Cek Ganjil Genap</button>
+    <p id="demo"></p>
+    <script>
+        function ganjilGenap() {
+            let angka = prompt("Masukkan angka");
+            if (angka % 2 == 0) {
+                angka = "Genap";
+                document.getElementById("demo").innerHTML = angka;
+            } else {
+                angka = "Ganjil";
+                document.getElementById("demo").innerHTML = angka;
+            }
+        }
+    </script>
+</body>
+</html>
