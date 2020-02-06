@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10 Add to Array</title>
+</head>
+<body>
+    <p>Menambahkan Handuk dan Celana pada array ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu']</p>
+    <button onclick="addArray()">Klik hasil</button>
+    <p id="demo"></p>
+    <script>
+        function addArray() {
+            const stuff = ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu'];
+            stuff.splice(0, 0, 'Handuk');
+            stuff.splice(6, 1, 'Celana');
+            document.getElementById("demo").innerHTML = stuff;
+        }
+    </script>
+</body>
+</html>
