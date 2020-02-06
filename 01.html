@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01</title>
+</head>
+<body>
+    <button onclick="hitungKarakter()">Hitung Jumlah Karakter</button>
+    <p id="demo"></p>
+    <script>
+        function hitungKarakter() {
+            let hitung = prompt("Masukkan kata");
+            let n = hitung.length;
+            document.getElementById("demo").innerHTML = n;
+        }
+    </script>
+</body>
+</html>
