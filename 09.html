@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>09 Membalikkan Kata</title>
+</head>
+<body>
+    <p>Membalikkan kata "saya ingin makan nasi goreng"</p>
+    <button onclick="doReverse()">Klik balikkan</button>
+    <p id="demo"></p>
+    <script>
+        function doReverse() {
+            let string = 'saya ingin makan nasi goreng';
+            alert("" + reverseString(string));
+        }
+        function reverseString(string) {
+            string = string.split(/\s/);
+            string = string.reverse();
+            string = string.join(" ");
+            return string;
+        }
+        document.getElementById("demo").innerHTML = string;
+    </script>
+</body>
+</html>
