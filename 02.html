@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02</title>
+</head>
+<body>
+    <button onclick="cariGrade()">Mencari Grade</button>
+    <p id="demo"></p>
+    <script>
+        function cariGrade() {
+            let nilai = prompt("Masukkan nilai");
+            let grade = '';
+            if (nilai >= 90) {
+                grade = "A";
+            }
+            else if (nilai >= 80 && nilai <= 89 ){
+                grade = "B";
+            }
+            else if (nilai >= 70 && nilai <= 79) {
+                grade = "C";
+            }
+            else if (nilai >= 60 && nilai <= 69) {
+                grade = "D";
+            }
+            else if (nilai <= 59) {
+                grade = "E";
+            }
+            document.getElementById("demo").innerHTML = grade;
+        }
+    </script>
+</body>
+</html>
