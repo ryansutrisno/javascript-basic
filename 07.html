@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07 50 Bilangan Ganjil</title>
+</head>
+<body>
+    <button onclick="bilanganGanjil()">50 Bilangan Ganjil</button>
+    <p id="demo"></p>
+    <script>
+        function bilanganGanjil() {
+            let start = 1;
+            let end = 100;
+            let result = [];
+
+            for(i = start; i <= end; i++) {
+                if (i % 2 != 0) {
+                    result += i + "<br>";
+                }
+            }
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
