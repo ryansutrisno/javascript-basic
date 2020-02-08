@@ -18,8 +18,13 @@
                 {name: 'Mengkudu', price: 4000},
                 {name: 'Kiwi', price: 6000}
             ]
-            let obj = JSON.stringify(fruits);
-            document.getElementById("demo").innerHTML = obj;
+            const result = fruits.reduce(function(map, obj) {
+                map[obj.name] = obj.price;
+                return map;
+            }, {});
+            // console.log(result);
+            let hasil = JSON.stringify(result);
+            document.getElementById("demo").innerHTML = hasil;
         }
     </script>
 </body>
